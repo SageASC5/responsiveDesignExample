@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Advent+Pro|Coda');
 /* font-family: 'Advent Pro', sans-serif; */
 /* font-family: 'Coda', cursive; */
-
+ 
 /* https://coolors.co/eae8ff-d8d5db-adacb5-2d3142-b0d7ff */
 :root{
     --primary:#EAE8FF;
@@ -74,4 +74,25 @@ footer{
     display:flex;
     justify-content: center;
     align-items: center;
+}
+
+@media(max-width: 1030px){
+    .card-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        flex: 1 0 auto;
+    }
+}
+
+@media(max-width: 530px){
+    .card{
+        align-items: center;
+        width: 80%;
+    }
+    .card img{
+        width: 80%;
+        height: initial;
+    }
 }
